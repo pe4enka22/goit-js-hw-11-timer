@@ -33,7 +33,7 @@ const refs = {
         const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
         
        // document.write(today);
-        refs.title.textContent = `Until ${dd}.${mm} left:`
+        refs.title.textContent = `Time left to ${dd}.${mm}:`
     }
 
     init() {
@@ -66,10 +66,7 @@ const refs = {
 
 const timer = new CountdownTimer({
     selector: '#timer-1',
-    targetDate: new Date('Sep 01, 2021'),
+    targetDate: new Date('Apr 27, 2022'),
   });
 
 timer.startTimerBack();
-
-
-
